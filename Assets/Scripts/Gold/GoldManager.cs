@@ -32,7 +32,7 @@ namespace Gold
             Count += value;
         }
         
-        public bool IsEnough(int value)
+        public bool HasEnough(int value)
         {
             return Count >= value;
         }

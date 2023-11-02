@@ -37,5 +37,11 @@ namespace Health
         {
             Count += value;
         }
+        
+        public void AddPercent(float percentage)
+        {
+            percentage = Math.Clamp(percentage, 0f, 1f);
+            Count += (int) (Count * percentage);
+        }
     }
 }

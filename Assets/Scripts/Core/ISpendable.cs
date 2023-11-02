@@ -1,7 +1,12 @@
-﻿namespace Core
+﻿using System;
+
+namespace Core
 {
-    public class ISpendable
+    public interface ISpendable
     {
-        
+        public event Action OnCountUpdated;
+        public bool TrySpend();
+        public bool HasEnough();
+        public int Count { get; }
     }
 }

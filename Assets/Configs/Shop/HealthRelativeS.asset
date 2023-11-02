@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12048389a9d4bec9f810bcbe511d366, type: 3}
+  m_Name: HealthRelativeS
+  m_EditorClassIdentifier: 
+  reward:
+    rid: 4141559091635159051
+  currency:
+    rid: 4141559091635159052
+  references:
+    version: 2
+    RefIds:
+    - rid: 4141559091635159051
+      type: {class: HealthPercentAddReward, ns: Health, asm: Health}
+      data:
+        percentage: 0.2
+    - rid: 4141559091635159052
+      type: {class: GoldSpendable, ns: Gold, asm: Gold}
+      data:
+        count: 20

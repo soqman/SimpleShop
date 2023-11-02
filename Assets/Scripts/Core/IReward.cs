@@ -1,7 +1,8 @@
 ﻿namespace Core
 {
-    public class IReward
+    public interface IReward
     {
-        
+        public string DisplayName { get; }
+        public void Claim();
     }
 }

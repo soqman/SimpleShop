@@ -18,6 +18,11 @@ namespace Location.View
             LocationManager.OnLocationChanged -= OnLocationChanged;
         }
 
+        private void Start()
+        {
+            RefreshView();
+        }
+
         private void OnLocationChanged()
         {
             RefreshView();

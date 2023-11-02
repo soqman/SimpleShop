@@ -18,6 +18,11 @@ namespace Health.View
             HealthManager.OnHealthChanged -= OnHealthChanged;
         }
 
+        private void Start()
+        {
+            RefreshView();
+        }
+
         private void OnHealthChanged()
         {
             RefreshView();

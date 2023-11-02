@@ -18,6 +18,11 @@ namespace Gold.View
             GoldManager.OnGoldCountChanged -= OnGoldCountChanged;
         }
 
+        private void Start()
+        {
+            RefreshView();
+        }
+
         private void OnGoldCountChanged()
         {
             RefreshView();
